@@ -101,7 +101,7 @@ def upload():
 
         data = [[cell.v for cell in row] for row in all_rows[header_idx+1:]]
 
-        # 6) locate columns by fuzzy‑matching
+        # 6) locate columns by fuzzy matching
         try:
             idx_level   = next(i for i,h in enumerate(headers) if 'level' in h.lower())
             idx_empinfo = next(i for i,h in enumerate(headers)
